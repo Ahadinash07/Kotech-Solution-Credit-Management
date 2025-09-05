@@ -41,7 +41,7 @@ export async function GET(request: NextRequest) {
       where: { 
         userId: payload.userId,
         isActive: false,
-        endTime: { [Op.not]: null }
+  endTime: { [Op.not]: null as unknown as Date }
       }
     });
 

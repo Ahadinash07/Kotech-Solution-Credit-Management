@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { verifyToken } from '../../../../lib/auth';
-import { User } from '../../../../models/User';
+import { verifyToken } from '../../../../../lib/auth';
+import { User } from '../../../../../models';
 
 export async function GET(request: NextRequest) {
   try {
