@@ -278,7 +278,7 @@ function Dashboard() {
             {/* Session Status */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               <div className="bg-gray-50 rounded-lg p-4">
-                <h3 className="text-lg font-semibold mb-3">Session Status</h3>
+                <h3 className="text-lg text-black font-semibold mb-3">Session Status</h3>
                 {isSessionActive ? (
                   <div className="space-y-2">
                     <p className="text-green-600 font-medium">✓ Active Session</p>
@@ -311,7 +311,7 @@ function Dashboard() {
               </div>
 
               <div className="bg-gray-50 rounded-lg p-4">
-                <h3 className="text-lg font-semibold mb-3">Quick Actions</h3>
+                <h3 className="text-lg text-black font-semibold mb-3">Quick Actions</h3>
                 <div className="space-y-2">
                   {!isSessionActive ? (
                     <button
@@ -345,7 +345,7 @@ function Dashboard() {
       case 'history':
         return (
           <div className="space-y-6">
-            <h2 className="text-xl font-semibold">Session History</h2>
+            <h2 className="text-xl text-black font-semibold">Session History</h2>
             {historyLoading ? (
               <div className="text-center py-8">
                 <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-blue-600 mx-auto"></div>
